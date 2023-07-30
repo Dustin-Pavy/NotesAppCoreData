@@ -16,6 +16,14 @@
 		025EFC0A2A70432300A58FA2 /* NotesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025EFC092A70432300A58FA2 /* NotesAppTests.swift */; };
 		025EFC142A70432300A58FA2 /* NotesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025EFC132A70432300A58FA2 /* NotesAppUITests.swift */; };
 		025EFC162A70432300A58FA2 /* NotesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025EFC152A70432300A58FA2 /* NotesAppUITestsLaunchTests.swift */; };
+		029E7DFA2A74339100F49C79 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7DF82A74339100F49C79 /* CoreDataManager.swift */; };
+		029E7DFB2A74339100F49C79 /* CoreDataOperationsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7DF92A74339100F49C79 /* CoreDataOperationsProtocol.swift */; };
+		029E7E002A74350400F49C79 /* DataStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7DFF2A74350400F49C79 /* DataStructs.swift */; };
+		029E7E022A757E5E00F49C79 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7E012A757E5E00F49C79 /* NotesViewModel.swift */; };
+		029E7E412A75CD8000F49C79 /* ItemGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7E402A75CD8000F49C79 /* ItemGridCell.swift */; };
+		029E7E452A75CF1D00F49C79 /* WideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7E432A75CF1D00F49C79 /* WideButton.swift */; };
+		029E7E462A75CF1D00F49C79 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7E442A75CF1D00F49C79 /* ColorExtension.swift */; };
+		029E7E482A75E59D00F49C79 /* NoteDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E7E472A75E59D00F49C79 /* NoteDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,16 @@
 		025EFC0F2A70432300A58FA2 /* NotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		025EFC132A70432300A58FA2 /* NotesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppUITests.swift; sourceTree = "<group>"; };
 		025EFC152A70432300A58FA2 /* NotesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		029E7DF82A74339100F49C79 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		029E7DF92A74339100F49C79 /* CoreDataOperationsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataOperationsProtocol.swift; sourceTree = "<group>"; };
+		029E7DFF2A74350400F49C79 /* DataStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructs.swift; sourceTree = "<group>"; };
+		029E7E012A757E5E00F49C79 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		029E7E032A75A56D00F49C79 /* NotesApp 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NotesApp 2.xcdatamodel"; sourceTree = "<group>"; };
+		029E7E042A75A89100F49C79 /* NotesApp 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NotesApp 3.xcdatamodel"; sourceTree = "<group>"; };
+		029E7E402A75CD8000F49C79 /* ItemGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGridCell.swift; sourceTree = "<group>"; };
+		029E7E432A75CF1D00F49C79 /* WideButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WideButton.swift; sourceTree = "<group>"; };
+		029E7E442A75CF1D00F49C79 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		029E7E472A75E59D00F49C79 /* NoteDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +96,11 @@
 		025EFBE72A70432200A58FA2 = {
 			isa = PBXGroup;
 			children = (
+				029E7E422A75CF1D00F49C79 /* Extensions */,
+				029E7DFE2A7434D000F49C79 /* ViewModel */,
+				029E7DFD2A7434CA00F49C79 /* View */,
+				029E7DFC2A7434C200F49C79 /* Model */,
+				029E7DF72A74339100F49C79 /* CoreData */,
 				025EFBF22A70432200A58FA2 /* NotesApp */,
 				025EFC082A70432300A58FA2 /* NotesAppTests */,
 				025EFC122A70432300A58FA2 /* NotesAppUITests */,
@@ -99,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				025EFBF32A70432200A58FA2 /* NotesAppApp.swift */,
-				025EFBF52A70432200A58FA2 /* ContentView.swift */,
 				025EFBF72A70432300A58FA2 /* Assets.xcassets */,
 				025EFBFC2A70432300A58FA2 /* Persistence.swift */,
 				025EFBFE2A70432300A58FA2 /* NotesApp.xcdatamodeld */,
@@ -131,6 +153,50 @@
 				025EFC152A70432300A58FA2 /* NotesAppUITestsLaunchTests.swift */,
 			);
 			path = NotesAppUITests;
+			sourceTree = "<group>";
+		};
+		029E7DF72A74339100F49C79 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				029E7DF82A74339100F49C79 /* CoreDataManager.swift */,
+				029E7DF92A74339100F49C79 /* CoreDataOperationsProtocol.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		029E7DFC2A7434C200F49C79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				029E7DFF2A74350400F49C79 /* DataStructs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		029E7DFD2A7434CA00F49C79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				025EFBF52A70432200A58FA2 /* ContentView.swift */,
+				029E7E402A75CD8000F49C79 /* ItemGridCell.swift */,
+				029E7E472A75E59D00F49C79 /* NoteDetailScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		029E7DFE2A7434D000F49C79 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				029E7E012A757E5E00F49C79 /* NotesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		029E7E422A75CF1D00F49C79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				029E7E432A75CF1D00F49C79 /* WideButton.swift */,
+				029E7E442A75CF1D00F49C79 /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +331,15 @@
 			files = (
 				025EFBFD2A70432300A58FA2 /* Persistence.swift in Sources */,
 				025EFBF62A70432200A58FA2 /* ContentView.swift in Sources */,
+				029E7DFB2A74339100F49C79 /* CoreDataOperationsProtocol.swift in Sources */,
 				025EFBF42A70432200A58FA2 /* NotesAppApp.swift in Sources */,
+				029E7E412A75CD8000F49C79 /* ItemGridCell.swift in Sources */,
+				029E7E022A757E5E00F49C79 /* NotesViewModel.swift in Sources */,
+				029E7E452A75CF1D00F49C79 /* WideButton.swift in Sources */,
+				029E7DFA2A74339100F49C79 /* CoreDataManager.swift in Sources */,
+				029E7E002A74350400F49C79 /* DataStructs.swift in Sources */,
+				029E7E462A75CF1D00F49C79 /* ColorExtension.swift in Sources */,
+				029E7E482A75E59D00F49C79 /* NoteDetailScreen.swift in Sources */,
 				025EFC002A70432300A58FA2 /* NotesApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,9 +664,11 @@
 		025EFBFE2A70432300A58FA2 /* NotesApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				029E7E042A75A89100F49C79 /* NotesApp 3.xcdatamodel */,
+				029E7E032A75A56D00F49C79 /* NotesApp 2.xcdatamodel */,
 				025EFBFF2A70432300A58FA2 /* NotesApp.xcdatamodel */,
 			);
-			currentVersion = 025EFBFF2A70432300A58FA2 /* NotesApp.xcdatamodel */;
+			currentVersion = 029E7E032A75A56D00F49C79 /* NotesApp 2.xcdatamodel */;
 			path = NotesApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -14,6 +14,7 @@ struct NotesAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(NotesViewModel())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
