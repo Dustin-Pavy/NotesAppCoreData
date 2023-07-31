@@ -45,13 +45,14 @@ struct ItemGridCell: View {
                     Spacer()
                 }
             }
-            .frame(width: 175, height: 175)
+            .frame( height: 175)
             .onAppear(){
                 self.randColor = Int.random(in: 0..<colorArray.count)
             }
         }
         .fullScreenCover(isPresented: $showDetails, content: {
             NoteDetailScreen(thisTitle: myTitle, thisBody: myBody, color: colorArray[randColor], isNew: false, thisItem: myItem)})
+        .padding(2.0)
     }
 }
 
